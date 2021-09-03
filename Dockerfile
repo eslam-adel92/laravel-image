@@ -7,6 +7,7 @@ RUN apk add --update \
     bash \
     certbot \
     certbot-nginx \
+    git \
     && rm -rf /var/cache/apk/*
     
 COPY ./composer.sh /tmp/
