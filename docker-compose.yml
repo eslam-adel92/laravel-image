@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build:
+        context: .
+    image: laravel-image_web
+    # container_name: 
+    ports:
+       - "80:80"
+       - "443:443"
+    # volumes:
+      #  -
+    restart: always
