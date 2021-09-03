@@ -12,7 +12,7 @@ RUN apk add --update \
 COPY ./composer.sh /tmp/
 RUN sh /tmp/composer.sh
 
-RUN mkdir /run/nginx/ 
+# RUN mkdir /run/nginx/ 
 RUN mkdir /etc/supervisor/
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 COPY default.conf /etc/nginx/conf.d/
